@@ -1,0 +1,124 @@
+# Operaters
+# a=int(input("Enter first number"))
+# op=input("Enter the operator(+,-,*,/,//,%,**)")
+# b=int(input('Enter second number'))
+# if op=="+":
+#  print("Result:",a+b)
+# if op=="-":
+#  print("Result:",a-b)
+# if op=="*":
+#  print("Result:",a*b)
+# if op=="/":
+#  print("Result:",a/b)
+# if op=="//":
+#  print("Result:",a//b)
+# if op=="%":
+#  print("Result:",a%b)
+# if op=="**":
+#  print("Result:",a**b)
+ 
+ # Type casting
+# a="4"
+# b="9"
+# print(int(a)+int(b))
+
+# x=1.56
+# y=2
+# z=print(x+y)
+# print(type(z))
+
+# strings
+# name="Sidra Ghaffar"
+# print(name)
+# # single line 
+# # multi line 
+# print(name[8])
+# print(name[-1])
+
+# #  for loop charcter ka use 
+# print("After the for loop")
+# for character in name:
+#  print(character)
+# # Strings slicing 
+# print(len(name))
+# len1=len(name)
+# print(f"{name} have {len1} character in her name")
+# print(name[3:9])
+# print(name[:8])
+# print(name[:])
+# print(name[-5:-1])
+
+# String methods
+name="Sidra Ghaffar is a sweet girl."
+# print(name.upper())
+# print(name.lower())
+print(name.rstrip("a"))# es ki samjh nhi lagi mujhe 
+print(name.center(45))
+print(name.count("a"))
+print(name.isalnum())# jis ma words or numbers dono hoo
+print(name.isalpha())
+print(name.isalnum())
+print(name.isspace())
+print(name.swapcase())
+# print(name.title())
+# print(name.capitalize())
+
+# # Find and replace karna hoo aghr
+# print(name.find("girl"))
+# print(name.replace("sweet","lovely"))
+
+# name input lye first ko upper ma second ko lower ma
+# nm=input("Enter your full name")
+# parts=nm.split()
+# first=parts[0].upper()
+# last=parts[1].lower()
+# username=first," ",last
+# print(username)
+
+
+# Email input lo aur sirf pehle 3 letters show karo, baqi * se mask karo
+# m=input("Enter your email address ")
+# index=m.find("@")
+# username=m[:index]
+# domain=m[index:]
+# show=username[:3]
+# mask_len=len(username)-3
+# stars="*"*mask_len
+# email=show+stars+domain
+# print(email)
+
+# num=(input("Enter your phone number"))
+# show1=num[0:3]
+# show2=num[-2:]
+# stars="*"*(len(num)-5)
+# numb=show1+stars+show2
+# print(numb)
+
+# CNIC=input("Enter your CNIC number")
+# show1=CNIC[0:3]
+# show2=CNIC[-2:]
+# stars="*"*(len(CNIC)-5)
+# cn=show1+stars+show2
+# print(cn)
+
+# m="Fucker"
+# show=m[:1]
+# ret=len(m)-1
+# stars="*"*ret
+# f=show+stars
+# print(f)
+
+
+# check karna palindrome(word reverse hoo to same bane) hai yeh nhi
+# n=input("Enter a word")
+# if n==n[::-1]:
+#  print("palindrome")
+# else:
+#  print("Not palindrome")
+
+
+# n="Sidra ghaffar"
+# for a in n:
+#  print(a)
+
+
