@@ -1,0 +1,54 @@
+# # Taking user input
+# input your name
+# a=input("Enter your name")
+# print(a)
+
+# taking input of your name 
+# name=input("Enter your name")
+# print("Hello",name,"!")
+
+# taking age from you and dispaly next year age
+# age=int(input("Enter your age "))
+# print("Your age in next year ",age+1)
+
+# input two numbers and display their sum
+# a=input("Enter your first number")
+# b=input("Enter your second number")
+# print(int(a)+int(b))
+# print(int(a)-int(b))
+# print(int(a)*int(b))
+# print(int(a)/int(b))
+
+# x=int(input("Enter your first number"))
+# y=int(input("Enter your second numbe"))
+# print(x+y)
+
+#User city'name and display it
+# name=input("Enter your name")
+# cityName=input("Enter your city name ")
+# print(name,"live in ",cityName)
+
+#Take marks from user and display pass or fail
+# marks=int(input("Enter your marks"))
+# if marks>35:
+#  print("pass")
+# if marks<35:
+#  print("fail")
+
+# enter a word then display the total numbers
+# c=input("Enter the any word")
+# print("Length of the word is",len(c))
+
+# age=int(input("Enter your age in year"))
+# month=age*12
+# # days=month*30
+# print("your age in month and days is",month,days)
+
+'''
+len=float(input("Enter the length"))
+width=float(input("Enter the width"))
+area=len*width
+perimeter=2*len*width
+print(f"The area is {area} and perimter is {perimeter}")
+
+'''
