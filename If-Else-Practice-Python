@@ -1,0 +1,151 @@
+# Conditional statments 
+# a=int(input("Enter your age:"))
+# if(a>=18 and a<=50):# can also like this if(18<=a<=50)
+#    print("you can drive")
+# else:
+#  print("you can't drive")
+
+ # check karna number zero,postive yeh negative hain
+# n=int(input("Enter the number:"))
+# if(n<0):
+#    print(n,"number is negative")
+# elif(n>0):
+#   print(n,"number is postive")
+# else:
+#    print(n,"number is zero")
+
+# number is even yeh odd hain
+# n=int(input("Enter a number:"))
+# if(n%2==0):
+#     print(n,"is a even number.")
+# elif(n%2!=0):
+#     print(n,"is a odd number.")
+# else:
+#     print("invalid number")
+
+# marks grading
+# marks=int(input("Enter the marks:"))
+# if(marks>=90):
+#     print("A Grade")
+# elif(marks>=80):
+#     print("B Grade")
+# elif(marks>=70):
+#     print("C Grade")
+# elif(marks>=60):
+#     print("D Grade")
+# elif(marks<=60 and marks>=30):
+#     print("Pass")
+# elif(marks<=30):
+#     print("Fail")
+# else:
+#     print("Invalid input")
+
+# password check
+# n=input("Enter your password")
+# if(n=="MOON"):
+#     print("Access Granted")
+# else:
+#     print("Your enter the wrong password")
+
+#Name check long yeh short
+# n=input("Enter your name")
+# if(len(n)>=5):
+#     print("Long Name")
+# else:
+#     print("Short Name")
+
+# num=(input("Enter your phone number"))
+# if(len(num)==11 and len(num)==10):
+#  show1=num[0:3]
+#  show2=num[-2:]
+#  stars="*"*(len(num)-5)
+#  numb=show1+stars+show2
+#  print(numb)
+# else:
+#  print("Please enter a valid phone number")
+
+ # check vowel and consonent
+# n=input("Enter a letter").lower()
+# if n in("a","e","i","o","u"):
+#   print(n,"is a vowel")
+# else:
+#  print(n,"is a consonent")
+
+#larger number checker between two number
+# a=int(input("Enter the first number"))
+# b=int(input("Enter the second number"))
+# if(a>b):
+#     print("a is greater number")
+# else:
+#     print("b is a greater number")
+
+#Temperture checker
+# t=int(input("Enter the temparature"))
+# if(t>=30):
+#     print("Hot")
+# elif(t<=30 and t>=15):
+#     print("Normal")
+# else:
+#     print("Cold")
+
+#leap year 
+# year=int(input("Enter the year"))
+# if(year%4==0):
+#     print(year,"is a leap year")
+# else:
+#     print(year,"is not a leap year")
+
+# Greeting program according to time
+# time=int(input("Enter the time(0-23)"))
+# if(time>=5 and time<=12):
+#     print("Good Morning")
+# elif(time>=12 and time<=17):
+#     print("Good Afternoon")
+# elif(time>=17 and time<=20):
+#     print("Good Evening")
+# elif(time>=20 and time<=23):
+#     print("Good Night")
+# else:
+#     print("invalid time")
+
+from datetime import datetime
+
+# Current time
+now = datetime.now()
+
+# Print hour, minute, second
+print("Hour:", now.hour)
+print("Minute:", now.minute)
+print("Second:", now.second)
+
+# Optional – formatted time
+formatted_time = now.strftime("%H:%M:%S")
+print("Current Time:", formatted_time)
+
+from datetime import datetime
+
+# Ask user to enter hour or press Enter to use current time
+user_input = input("Enter the hour (0-23) or press Enter to use current time: ")
+
+if user_input == "":
+    # User didn't enter anything → use current time
+    now = datetime.now()
+    hour = now.hour
+    print("Using current time:", now.strftime("%H:%M:%S"))
+else:
+    # User entered a number
+    hour = int(user_input)
+    if hour < 0 or hour > 23:
+        print("Invalid hour")
+        exit()
+
+# Decide greeting based on hour
+if 5 <= hour < 12:
+    print("Good Morning")
+elif 12 <= hour < 17:
+    print("Good Afternoon")
+elif 17 <= hour < 20:
+    print("Good Evening")
+else:  # 20-23 and 0-4
+    print("Good Night")
+
