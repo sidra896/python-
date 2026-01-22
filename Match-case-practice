@@ -1,0 +1,129 @@
+# Match case statment is just like switch statment it is latest version in python 3.10
+
+# num=int(input("Enter a number"))
+# match num:
+#     case 1:
+#         print("you enter 1 ")
+#     case 2:
+#         print("you enter 2")
+#     case 3:
+#         print("you enter 3")
+#     case _:
+#         print("you enter invalid number")
+
+#Enter a day and tells us about this 
+# day=input("Enter a day").lower()
+# match day:
+#     case "monday":
+#         print("Start of the week")
+#     case "friday":
+#         print("Near to weekend")
+#     case "sunday":
+#         print("Holiday")
+#     case _:
+#         print("Normal day")
+
+#Enter a number tells us it is odd or even
+# n=int(input("Enter a number"))
+# match n:
+#     case n if n%2!=0:
+#         print("Odd number")
+#     case n if n%2==0:
+#         print("Even number")
+#     case _:
+#         print("Out of the range")
+
+#Enter the age and tell you are young,adult,senior citizen
+# age=int(input("Enter the age "))
+# match age:
+#     case n if n<18:
+#         print("You are young")
+#     case n if 18 <=n <50:
+#         print("You are adult")
+#     case _:
+#         print("you are senior citizen")
+
+# ABOUT TRAFFIC LIGHTS
+# n=input("Enter the color of the light").lower()
+# match n:
+#     case "red":
+#         print("Stop ")
+#     case "yellow":
+#         print("Ready")
+#     case "green":
+#         print("Go")
+#     case _:
+#         print("invalid input")
+
+#check the grade
+# marks=int(input("Enter your marks"))
+# match marks:
+#     case m if m>=90:
+#         print("A Grade")
+#     case m if m<90 and m>=80:
+#         print("B Grade")
+#     case m if m<80 and m>=70:
+#         print("C Grade")
+#     case m if m<70 and m>=60:
+#         print("D Grade")
+#     case _:
+#         print("F Grade")
+
+# #Simple calculator
+# num1=int(input("Enter first number"))
+# num2=int(input("Enter second number"))
+# op=input("Enter the operation")
+# match op:
+#     case "+":
+#         print("The sum of two numbers is:",num1+num2)
+#     case "-":
+#         print("The subtraction of two numbers is:",num1-num2)
+#     case "*":
+#         print("The multiplication of two numbers is:",num1*num2)
+#     case "%":
+#         print("The division  of two numbers is:",num1%num2)
+#     case _:
+#         print("Invalid operation")
+
+# #Smart vending machine
+# print("Welcome to smart vending machine")
+# print("1.Chips - RS 50")
+# print("2.Juice - RS 80")
+# print("3.Chocolate - RS 100")
+# item=int(input("Enter the item(1/2/3)"))
+# money=int(input("Insert money="))
+# match item:
+#     case 1:
+#         price = 50
+#         item_name = "Chips"
+#     case 2:
+#         price = 80
+#         item_name = "Juice"
+#     case 3:
+#         price = 100
+#         item_name = "Chocolate"
+#     case _:
+#         print("Invalid item code ")
+#         price = None
+# if price is not None:
+#  match money:
+#    case x if x<price:
+#         print("Insufficient Money")
+#    case _:
+#         change=money-price
+#         print(f"You order {item_name}")
+#         print("your change is:",change)
+
+#Weather Advice System
+# weather=input("Enter the weather").lower()
+# match weather:
+#     case "sunny":
+#         print("Wear light clothes and sunglasses")
+#     case "rainy":
+#         print("Take an umbrella and wear a raincoat")
+#     case "cold":
+#         print("Wear warm clothes like a jacket and sweater ")
+#     case "hot":
+#         print("Wear cotton clothes and drink water ")
+#     case _:
+#         print("Invalid weather type ")
