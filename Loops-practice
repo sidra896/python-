@@ -122,3 +122,84 @@
 # while(i>0):
 #     print("*" * i)
 #     i-=1
+
+
+#Break Statmenet(stop the loop before it has looped through all the item)
+# i=0
+# while(i>=0):
+#     print(i)
+#     i+=1
+#     if(i==90):
+#      break
+
+# while True:
+#  num=int(input("Enter a number"))
+#  #print(num)
+#  if(num==80):
+#   print("loop has stopped")
+#   break
+
+# while True:
+#  name=input("Enter name:").lower()
+#  if(name=="sidra"):
+#    print(name)
+#    print("user name entered")
+#    break
+
+
+#Table ko print karne ke lye 
+# n=int(input("Enter a number"))
+# for s in range(1,78):
+#     result=n*s
+#     print(f"{n}*{s}={result}")
+#     if(result>=10):
+#         print("result 9 hoo gya hai.Loop break")
+#         break
+
+#Continue statment(stop the current iteration of the loop, and continue with the next:)
+# i=1
+# while(i<10):
+#     i+=1
+#     if (i==5):
+#         continue
+#     print(i)
+
+# n=int(input("Enter a number"))
+# for s in range(1,78):
+#     result=n*s
+#     if(result==10):
+#       continue
+#     print(f"{n}*{s}={result}")
+
+#pass Python ka do-nothing statement hai.
+# for i in range(6):
+#     pass
+ # print("nothing")
+
+# print("Welcome to the loop practice! 😊")
+# print("You can add your code inside the loop later.")
+
+# Loop structure ready
+# for i in range(5):
+#     for y in range(6):
+#      pass  # abhi loop me kuch nahi karna
+#      i+=1
+#      r=i*i
+#      y+=3
+#      z=y*y
+#      print(r,z)
+# print("Loop structure complete. Ab tum isme code add kar sakti ho!")
+
+
+# for x in range(3):
+#     for y in range(1,5):
+#         print(y,end=" ")
+#     print(" ")
+
+# rows=int(input("enter the number of rows"))
+# columns=int(input("enter the number of columns"))
+# symbol=input("enter the symbol")
+# for x in range(rows):
+#     for y in range(columns):
+#         print("*",end="")
+#     print("")
