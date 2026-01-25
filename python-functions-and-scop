@@ -1,0 +1,139 @@
+#Functions 
+#user se name lye 
+# def greet(name):
+#     print(f"Hello {name}!Welcome to python programming")
+# name=input("Enter your name:")
+# greet(name)
+# greet("sidra")
+
+#number ko sum karna 
+# def add(a,b):
+#     print(f"the sum of {a} and {b} is {a+b}")
+# x=int(input("Enter the first value"))
+# y=int(input("Enter the second value"))
+# add(x,y)
+
+#even or odd check karna 
+# def check(x):
+#     if(x%2==0):
+#      return "Even"
+#     else:
+#        return "Odd"
+# a=int(input("Enter the value"))
+# result=check(a)
+# print(result)
+
+# def table(x):
+#    for y in range(1,11):
+#       print(f"{x} * {y} = {x*y}")
+# z=int(input("Enter a number:"))
+# table(z)
+
+# def factorial(n):
+#     fact = 1
+#     for i in range(1, n+1):
+#         fact = fact * i
+#     return fact
+
+# # User se input
+# num = int(input("Enter a number: "))
+
+# # Function call
+# result = factorial(num)
+# print(f"Factorial of {num} is:", result)
+
+# def change(x):
+#     return (x - 32) * 5 / 9
+# print(change(34))
+
+# def greater(a,b):
+#     if(a>b):
+#         return "First number is greater"
+#     else:
+#         return "Second number is greater"
+# a=int(input("Enter first number:"))
+# b=int(input("Enter second number:"))
+# result=greater(a,b)
+# print(result)
+
+
+# def quiz():
+#    score=0
+#    q1=input("Sidra ke lye nickname kya use karte hoo ap: ").strip().lower()
+#    if q1=="shazadi":
+#      score +=1
+#      print("Thank you Shazady ")
+#    q2=input("Shaazadi se kitna pyar karte hooo ap: ").strip().lower()
+#    if q2=="bhut zyada":
+#      score+=1
+#      print("Ma bi bhut zyada karti hoo")
+#    q3=input("Shazadi ko kabi choro gye to nhi: ").strip().lower()
+#    if q3=="kabi nhi":
+#      score+=1
+#      print("Heamsha sath rahe gye inshallah")
+#    return score
+# result=quiz()
+# # print(result)
+# if result==3:
+#   print("Love you sooooooo much ")
+# else:
+#    print("Your answer is wrong")
+
+#Arguments
+# def average(a=2,b=8):#default value hote hain
+#     print("The average is :",(a+b)/2)
+# average(5,8)#argument is the actual value that is sent when function is called
+# average(90,67)
+# average(2)#a ke value 2 hoo gyi likhn b ki bydefault lee lye gya
+# average(b=7)
+
+# def name(fname="Sidra",mname="Abdul",lname="Ghaffar"):
+#     print(fname,mname,lname)
+# name()
+# name("Ammy")
+
+# def my_function(fname, lname):
+#   print(fname + " " + lname)
+
+# my_function("Emil", "Refsnes")
+
+# def function(*numbers):
+#     sum=0
+#     diff=numbers[0] if len(numbers) > 0 else 0
+#     multiply=1
+#     for i in numbers:
+#         sum+=i
+#     for i in numbers[1:]:   
+#         diff-=i
+#         multiply*=i
+#     print(f"The sum of the numbers is {sum}")
+#     print(f"The difference of the numbers is {diff}")
+#     print(f"The multiplication of the numbers is {multiply}")
+# function(9,8,0)
+# function(2,1,0)
+
+#Python scope
+#local function(A variable created inside a function is available inside that function)def myfunc():
+# def myfunc():
+#   x = 300
+#   print(x)
+# myfunc()
+#print(x)   error aaye gya kuo k local ma sirf us function ma he use he hoo gya 
+
+#Enclosing function(Function ke andar function ho (nested function))
+# def outer():
+#     x=20
+#     def inner(): 
+#      print(x)
+#     inner()
+# outer()
+
+# #Global function(poore program me use hota hai.)
+# x=10
+# def myfunc():
+#   print(x)
+# myfunc()
+# print(x)  
+
+#built in function
+print(len("sidra"))
